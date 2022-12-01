@@ -1,0 +1,114 @@
+#failed-assignment > img {
+    transform: scale(2.2, 2.2) skew(-20deg, 10deg);
+    border: 10px ridge red;
+    border-radius: 30px;
+}
+
+#failed-assignment {
+    position: relative;
+    text-align: center;
+    top: 260px;
+}
+
+.FAIL {
+    position: absolute;
+    text-align: center;
+    transform: rotate(15deg) translate(40px, -40px) scaleX(0.7) scaleY(0.7) skewX(-30deg) skewY(2deg);
+    top: 100px;
+    bottom: 400px;
+    left: 400px;
+    right: 320px;
+}
+
+a > h2 {
+    padding: 20px;
+    text-align: center;
+    border: 4px ridge darkblue;
+    color: black;
+    background-color: aqua;
+    justify-content: center;
+    position: relative;
+    border-radius: 30px;
+    margin-top: 30px;
+    width: 160px;
+    height: 100px;
+    margin-left: 100px;
+}
+
+#boxes {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.threeDfilebox {
+    position: relative;
+    border: rgb(8, 152, 177) 10px groove;
+    transition-property: transform;
+    transition-duration: .7s;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(149, 239, 239);
+    text-align: center;
+    border-radius: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: cadetblue;
+}
+
+#threeDfilebox1 {
+    transition-property: transform;
+    transition-duration: .7s;
+    transition: background-color 1.5s, color 2s, transform .7s, border 1.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.3s;
+}
+
+#threeDfilebox2 {
+    transition-property: transform;
+    transition-duration: .7s;
+    transition-timing-function: ease-in;
+    transition: background-color 1.5s, color 2s, transform .7s, border 1.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.3s;
+}
+
+#threeDfilebox3 {
+    transition-property: transform;
+    transition-duration: .7s;
+    transition: background-color 1.5s, color 2s, transform .7s, border 1.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.3s;
+}
+
+#threeDfilebox1:hover {
+    transform: rotateX(180deg) translate(-100px, 0px);
+    transform-style: preserve-3d;
+}
+
+#threeDfilebox2:hover {
+    transform: rotateY(180deg) translate(0px, 100px);
+    transform-style: preserve-3d;
+}
+
+#threeDfilebox3:hover {
+    transform: rotateZ(180deg) translateX(-100px);
+    transform-style: preserve-3d;
+}
+
+.threeDfilebox > h1 {
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 55px;
+}
+
+.threeDfilebox:hover {
+    background-color: azure;
+    color: black;
+}
+
+body {
+    background-color: darkcyan;
+}
